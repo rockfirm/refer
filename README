@@ -1,0 +1,6 @@
+commons-httpclient-3.0.1.jar :  QQ微博登陆/分享依赖包
+Android_SDK.jar              :  QQ微博登陆/分享依赖包
+Android_SDK_component.jar    :  QQ微博登陆/分享依赖包
+android_api.jar              :   baidu统计
+
+get.refer.widget.SlideHolder: 简单的SlideMenu

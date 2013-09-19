@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingBottom="20dp">
+        <TextView android:layout_width="fill_parent" android:layout_height="45dp" android:background="@drawable/title_bar" android:text="@string/app_name" android:textColor="#ffffff" android:textSize="18sp" android:gravity="center"/>
+        
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="14dp" android:layout_marginBottom="14dp"
+            android:paddingLeft="8dp" android:text="@string/component" android:textColor="#000" android:textSize="17sp" />
+        <LinearLayout android:id="@+id/horizontalListView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_first_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"  android:text="@string/horizontalListView" android:padding="12dp"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/view_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/view_pager" android:padding="12dp"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/media_test" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/media_test" android:padding="12dp"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/common_widgets" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/common_widgets" android:padding="12dp"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/view_flipper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/view_flipper" android:padding="12dp"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/event_motion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/event_motion" android:padding="12dp"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/tab_activity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/tab_activity" android:padding="12dp"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/stardand_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/stardand_listview" android:padding="12dp"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/web_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_last_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:padding="12dp" android:text="@string/web_view"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </RelativeLayout>
+        
+        <!-- test -->
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="14dp" android:layout_marginBottom="14dp"
+            android:paddingLeft="8dp" android:text="@string/for_test" android:textColor="#000" android:textSize="17sp" />
+        <LinearLayout android:id="@+id/test_ui_memory" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_first_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:padding="12dp" android:text="@string/test_ui_memory"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/test_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_last_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:padding="12dp" android:text="@string/test_shape"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+        
+        <!-- study -->
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="14dp" android:layout_marginBottom="14dp"
+            android:paddingLeft="8dp" android:text="@string/study" android:textColor="#000" android:textSize="17sp" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:text="@string/java_api" android:paddingTop="12dp" android:paddingLeft="24dp" android:paddingRight="12dp" android:paddingBottom="12dp"
+            android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"
+            android:background="@drawable/preference_first_item" android:clickable="true"
+            android:gravity="center_vertical" android:onClick="eventListen" android:id="@+id/java_api"/>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:text="@string/java_manual" android:paddingTop="12dp" android:paddingLeft="24dp" android:paddingRight="12dp" android:paddingBottom="12dp"
+            android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"
+            android:background="@drawable/preference_last_item" android:clickable="true"
+            android:gravity="center_vertical" android:onClick="eventListen" android:id="@+id/java_manual"/>
+        
+        <!-- function list -->
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="14dp" android:layout_marginBottom="14dp"
+            android:paddingLeft="8dp" android:text="@string/function_list" android:textColor="#000" android:textSize="17sp" />
+        <LinearLayout android:id="@+id/file_upload" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_first_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"  android:text="@string/file_upload" android:padding="12dp"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/animate_example" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/animate_example" android:padding="12dp"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/list_view_auto_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/list_view_auto_data" android:padding="12dp"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+         <LinearLayout android:id="@+id/get_phone_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/get_phone_info" android:padding="12dp"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/qucik_mark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/qucik_mark" android:padding="12dp"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/out_login" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_last_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/out_login" android:padding="12dp"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+        
+        <!-- 开源组件 -->
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="14dp" android:layout_marginBottom="14dp"
+            android:paddingLeft="8dp" android:text="@string/open_source" android:textColor="#000" android:textSize="17sp" />
+        <LinearLayout android:id="@+id/simple_sliding_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_first_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"  android:text="@string/simple_sliding_menu" android:padding="12dp"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="get.refer"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- baidu -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- baidu player -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- zbar -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    
+    <!-- gps -->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+
+    <application
+        android:name="get.refer.CrashApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 百度统计 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="1006" />
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="f24a29d068" />
+
+        <activity
+            android:name="get.refer.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="get.refer.HorizontalListViewActivity" >
+        </activity>
+        <activity android:name="get.refer.UiMemoryActivity" >
+        </activity>
+        <activity android:name="ViewPagerActivity" >
+        </activity>
+        <activity
+            android:name="BaiduPlayerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity android:name="WebViewActivity" >
+        </activity>
+        <activity android:name="JavaApiActivity" >
+        </activity>
+        <activity android:name="TAbleLayoutActivity" >
+        </activity>
+        <activity android:name="JavaApiList" >
+        </activity>
+        <activity android:name="MediaTestActivity" >
+        </activity>
+        <activity android:name="CommonWidgetsActivity" >
+        </activity>
+        <activity android:name="StandardListView" >
+        </activity>
+
+        <!-- function list -->
+        <activity android:name="get.refer.function.FileUploadActivity" >
+        </activity>
+        <activity android:name="get.refer.function.OutLoginActivity" >
+        </activity>
+        <activity android:name="get.refer.function.AutoDataActivity" >
+        </activity>
+        <activity android:name="get.refer.function.AnimationActivity" >
+        </activity>
+        <activity android:name="get.refer.function.GetPhoneInfoActivity" >
+        </activity>
+        <activity android:name="get.refer.function.QuickMarkActivity" 
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation">
+        </activity>
+        <!-- ViewFilpper guide -->
+        <activity android:name="get.refer.GuideActivity" >
+        </activity>
+        <activity android:name="ShaderEffect" >
+        </activity>
+        <!-- 事件手势 -->
+        <activity android:name="MotionActivity" >
+        </activity>
+        <!-- 弹框主题的Activity -->
+        <activity
+            android:name="get.refer.DialogActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <!-- tabActivity test -->
+        <activity android:name="MyTabActivity" >
+        </activity>
+
+        <!-- use open source -->
+        <activity
+            android:name="get.refer.opensouce.SimpleSlidingMenuActivty"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- zxinig -->
+        <!-- <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" > <intent-filter> <action android:name="android.intent.action.MAIN" /> <category android:name="android.intent.category.DEFAULT" /> </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="get.refer.function.QuickMarkActivity" >
+        </activity>
+ -->
+        <!-- service -->
+        <service android:name="TestServerWithActivity" >
+        </service>
+        
+        
+        <!-- zbar -->
+            <activity android:name=".CameraTestActivity" ></activity>
+        
+    </application>
+
+</manifest>

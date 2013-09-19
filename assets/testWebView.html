@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+		<title>test WebView UI 适配</title>
+		<style>
+			body, div {
+				margin: 0px;
+				padding: 0px;
+			}
+			body {
+				width: 100%
+			}
+			.linear {
+				background: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff));
+				-webkit-background-origin: padding;
+				-webkit-background-clip: content;
+			}
+			.radial {
+				background-image: -webkit-gradient(radial, 45 45, 10, 52 50, 30, from(#A7D30C), to(rgba(1,159,98,0)), color-stop(90%, #019F62)), -webkit-gradient(radial, 105 105, 20, 112 120, 50, from(#ff5f98), to(rgba(255,1,136,0)), color-stop(75%, #ff0188)), -webkit-gradient(radial, 95 15, 15, 102 20, 40, from(#00c9ff), to(rgba(0,201,255,0)), color-stop(80%, #00b5e2)), -webkit-gradient(radial, 0 150, 50, 0 140, 90, from(#f4f201), to(rgba(228, 199,0,0)), color-stop(80%, #e4c700));
+			}
+			/*@viewport {
+			width: device-width;
+			}*/
+		</style>
+	</head>
+	<body>
+		<div id="container" style="width:100%;height:100%;">
+			<div id="test" class="linear" style="height:300px">
+
+			</div>
+			<div style="width:100%;height:50px;position: fixed;bottom: 50px;left:0px;background: red">
+
+			</div>
+		</div>
+		<script>
+			var a = document.getElementById('container'), b = document.getElementById('test');
+			alert(';devicePixelRatio=' + window.devicePixelRatio + ';width=' + a.offsetWidth + ';height=' + a.offsetHeight);
+			// if(window.app != 'undefined'){
+			// b.style.width = window.app.getWidth()+"px";
+			// // console.log
+			// alert(b.offsetWidth+';devicePixelRatio='+window.devicePixelRatio+';width='+a.offsetWidth+';height='+a.offsetHeight);
+			// }
+		</script>
+	</body>
+</html>

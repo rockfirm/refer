@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cate">
+        <item>动作片</item>
+        <item>喜剧片</item>
+        <item>爱情片</item>
+        <item>科幻片</item>
+        <item>恐怖片</item>
+        <item>战争片</item>
+        <item>剧情片</item>
+        <item>111</item>
+        <item>222</item>
+        <item>333</item>
+        <item>444</item>
+        <item>555</item>
+        <item>666</item>
+        <item>777</item>
+        <item>888</item>
+        <item>999</item>
+        <item>000</item>
+        <item>aaa</item>
+        <item>bbb</item>
+        <item>ccc</item>
+        <item>ddd</item>
+    </string-array>
+</resources>

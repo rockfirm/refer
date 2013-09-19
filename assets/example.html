@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1" />
+<style type="text/css">
+body{margin:0;padding:0;width:100%;}
+input,button,select,input:focus{-webkit-appearance: none; -webkit-background-clip: padding-box;outline:none;-webkit-tap-highlight-color: rgba(0,0,0,0);}
+#chooce{color:#fff;font-size: 18px;width:98%;height:35px;border-radius:5px;background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#36AFD6), to(#2188A7));border:0;text-align: center;}
+#check{color:#fff;font-size: 18px;height:35px;border-radius:5px;margin-top:20px;background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#EFC82A), to(#E08D13));border:0}
+</style>
+</head>
+<body>
+<div id="container" style="margin:0;padding:20px;text-align: center;background:#fff;overflow:hidden;">
+	<div style="color:#999;text-align:left;font-size: 18px;">输入召唤师名称(注意大小写)</div>
+	<div style="text-align:center;padding:20px 0 20px 0">
+		<input id="name" style="border:1px solid #222;width:98%;border-radius:5px; height: 30px;padding:2px 4px 2px 4px;font-size: 18px;"/>
+	</div>
+	<select id="chooce">
+		<option value="1" style="text-align: center;">点击选择服务器</option>
+		<option value="电信一">艾欧尼亚</option>	
+		<option value="电信二">祖安</option>
+		<option value="电信三">诺克萨斯</option>
+		<option value="电信四">班德尔城</option>
+		<option value="电信五">皮尔特沃夫</option>
+		<option value="电信六">战争学院</option>
+		<option value="电信七">巨神峰</option>
+		<option value="电信八">雷瑟守备</option>
+		<option value="电信九">裁决之地</option>
+		<option value="电信十">黑色玫瑰</option>		
+		<option value="电信十一">暗影岛</option>
+		<option value="电信十二">钢铁烈阳</option>
+		<option value="电信十三">均衡教派</option>
+		<option value="电信十四">水晶之痕</option>
+		<option value="电信十五">影流</option>
+		<option value="电信十六">守望之海</option>
+		<option value="电信十七">征服之海</option>
+		<option value="电信十八">卡拉曼达</option>
+		<option value="网通一">比尔吉沃特</option>
+		<option value="网通二">德玛西亚</option>
+		<option value="网通三">弗雷尔卓德</option>
+		<option value="网通四">无畏先锋</option>
+		<option value="网通五">怒瑞玛</option>
+		<option value="网通六">扭曲森林</option>
+		<option value="教育一">教育网专区</option>
+	</select>
+	<div style="text-align:center">
+		<input id="check" type="button" value="查询" onclick="check()"/>
+	</div>
+	<img onclick="window.refer.clickFromAndroid('haha! I from js')" src="http://pic12.nipic.com/20110209/2897814_144722694127_2.gif" style="margin:5px auto" />
+	<p>PS:<a href="http://www.baidu.com/">该页面来自assets</a></p>
+</div>
+<script type="text/javascript" >
+function check(){
+	name = document.getElementById('name').value;
+	if(name == ''){
+		alert("请输入用户名");
+		return ;
+	}
+	localStorage.setItem("name",name);	
+	where = document.getElementById('chooce').value;
+	if(where == '1'){
+		alert("请选择服务器");	
+		return ;
+	}	
+	localStorage.setItem("chooce",where);
+	location.href="http://lolbox.duowan.com/phone/playerDetail.php?sn="+where+"&target="+name+"&from=search&sk=398723%4019T"
+}
+name = localStorage.getItem("name");
+if(name != 'null' && name != ''){
+	document.getElementById('name').value = name;
+}
+where = localStorage.getItem("chooce");
+if(where != null && where != ''){
+	document.getElementById('chooce').value = where;
+}
+//used for java
+function testCallFromJava(str){
+	document.getElementById('name').value = str;
+	alert(str);
+}
+</script>
+</body>
+</html>
