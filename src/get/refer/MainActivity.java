@@ -6,15 +6,11 @@ import get.refer.function.FileUploadActivity;
 import get.refer.function.GetPhoneInfoActivity;
 import get.refer.function.OutLoginActivity;
 import get.refer.function.QuickMarkActivity;
+import get.refer.function.SlideDeleteIOSActivity;
 import get.refer.opensouce.SimpleSlidingMenuActivty;
-
-import java.util.Map;
-import java.util.Map.Entry;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.Window;
@@ -35,31 +31,16 @@ public class MainActivity extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);//disabled title
 		setContentView(R.layout.activity_main);
 //		startService(new Intent(this, TestServerWithActivity.class));
-//		new Thread(new Runnable() {
-//			@Override
-//			public void run() {
-//				while(true){
-//					try {
-//						Thread.sleep(1000);
-//					} catch (InterruptedException e) {
-//						e.printStackTrace();
-//					}
-//					Log.i("aa","id="+Thread.currentThread().getId()+";GuideActivity.has="+GuideActivity.has);
-//				}
-//			}
-//		}).start();
 	}
 	
 	@Override
 	public void onBackPressed(){
 		super.onBackPressed();
 		finish();
-//		System.exit(0);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
@@ -104,6 +85,9 @@ public class MainActivity extends Activity {
 			break;
 		case R.id.qucik_mark://二维码扫描
 			startActivity(new Intent(this, QuickMarkActivity.class));
+			break;
+		case R.id.ios_list_del://仿IOS ListView滑动删除
+			startActivity(new Intent(this, SlideDeleteIOSActivity.class));
 			break;
 		case R.id.out_login:
 			startActivity(new Intent(this, OutLoginActivity.class));

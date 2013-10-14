@@ -90,6 +90,10 @@
              <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/qucik_mark" android:padding="12dp"
                  android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
         </LinearLayout>
+        <LinearLayout android:id="@+id/ios_list_del" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
+             <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/ios_list_del" android:padding="12dp"
+                 android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>
+        </LinearLayout>
         <LinearLayout android:id="@+id/out_login" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/preference_last_item" android:clickable="true" android:gravity="center_vertical" android:onClick="eventListen">
              <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/out_login" android:padding="12dp"
                  android:textColor="#000" android:textSize="18sp" android:drawableRight="@drawable/mm_submenu"/>

@@ -94,6 +94,8 @@
         </activity>
         <activity android:name="get.refer.function.GetPhoneInfoActivity" >
         </activity>
+        <activity android:name="get.refer.function.SlideDeleteIOSActivity" >
+        </activity>
         <activity android:name="get.refer.function.QuickMarkActivity" 
             android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation">
         </activity>

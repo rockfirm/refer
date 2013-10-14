@@ -16,6 +16,7 @@
     <string name="list_view_auto_data">ListView自动加载数据</string>
     <string name="get_phone_info">获取手机信息</string>
     <string name="qucik_mark">二维码生成和扫描</string>
+    <string name="ios_list_del">仿IOS ListView滑动删除</string>
     <string name="view_flipper">viewPager做引导图</string>
     <string name="event_motion">事件/手势</string>
     <string name="tab_activity">TabActivity</string>
