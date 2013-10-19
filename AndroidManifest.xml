@@ -30,6 +30,8 @@
     
     <!-- gps -->
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<!-- 获得BOOT_COMPLETED的使用许可 -->
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
 
     <application
         android:name="get.refer.CrashApplication"
@@ -122,30 +124,31 @@
             android:screenOrientation="portrait" >
         </activity>
 
-        <!-- zxinig -->
-        <!-- <activity
-            android:name="com.google.zxing.client.android.CaptureActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="landscape"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-            android:windowSoftInputMode="stateAlwaysHidden" > <intent-filter> <action android:name="android.intent.action.MAIN" /> <category android:name="android.intent.category.DEFAULT" /> </intent-filter>
-            <intent-filter>
-                <action android:name="com.google.zxing.client.android.SCAN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name="get.refer.function.QuickMarkActivity" >
-        </activity>
- -->
         <!-- service -->
         <service android:name="TestServerWithActivity" >
         </service>
         
-        
         <!-- zbar -->
-            <activity android:name=".CameraTestActivity" ></activity>
-        
+        <activity android:name=".CameraTestActivity" >
+        </activity>
+
+        <receiver android:name="StartReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="AlarmService"
+            android:enabled="true" >
+        </service>
+
+        <receiver android:name="ConnectionChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
